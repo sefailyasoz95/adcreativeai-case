@@ -1,4 +1,3 @@
-import React from "react";
 import Delete from "../assets/icons/delete";
 import { CharacterType } from "../utils/types";
 

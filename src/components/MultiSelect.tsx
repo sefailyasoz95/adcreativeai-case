@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useState } from "react";
+import { createRef, useEffect, useState } from "react";
 import { CharacterType } from "../utils/types";
 import SelectedName from "./SelectedName";
 import { useAppDispatch, useAppSelector } from "../redux/store";

@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { CharacterType } from "../utils/types";
 
 type Props = {
