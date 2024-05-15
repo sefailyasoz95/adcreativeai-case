@@ -1,26 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import MultiSelect from "./components/MultiSelect";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='flex min-w-7xl mt-20 h-screen items-center flex-col gap-10'>
+			<span className='font-semibold text-3xl'>Search for Rick and Morty Characters</span>
+			<MultiSelect />
+			<ToastContainer closeOnClick />
+		</div>
+	);
 }
 
 export default App;
