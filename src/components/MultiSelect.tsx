@@ -104,7 +104,7 @@ const MultiSelect = ({}: Props) => {
 						character={char}
 						searchValue={searchValue}
 						onSelect={() => {
-							if (selectedCharacters.includes(char)) {
+							if (selectedCharacters.findIndex((item) => item.id === char.id) > -1) {
 								handleDelete(char);
 							} else {
 								setSelectedCharacters([...selectedCharacters, char]);
